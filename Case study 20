@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Set<Integer> unique = new LinkedHashSet<>();
+        for (String arg : args) unique.add(Integer.parseInt(arg));
+        for (int num : unique) System.out.print(num + " ");
+        System.out.println();
+    }
+}
