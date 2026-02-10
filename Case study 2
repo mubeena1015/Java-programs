@@ -1,0 +1,11 @@
+public class DataExchange {
+    public static void main(String[] args) {
+        int sensor1 = 15;
+        int sensor2 = 25;
+        System.out.println("Before exchange: sensor1=" + sensor1 + ", sensor2=" + sensor2);
+        sensor1 = sensor1 ^ sensor2;
+        sensor2 = sensor1 ^ sensor2;
+        sensor1 = sensor1 ^ sensor2;
+        System.out.println("After exchange: sensor1=" + sensor1 + ", sensor2=" + sensor2);
+    }
+}
