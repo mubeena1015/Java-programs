@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (String arg : args) {
+            int num = Integer.parseInt(arg);
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+        for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
