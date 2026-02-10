@@ -1,0 +1,16 @@
+abstract class Shape {
+    abstract double area();
+}
+
+class Circle extends Shape {
+    double r;
+    Circle(double r) { this.r = r; }
+    double area() { return 3.14 * r * r; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape s = new Circle(5);
+        System.out.println(s.area());
+    }
+}
