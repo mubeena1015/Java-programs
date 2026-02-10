@@ -1,0 +1,15 @@
+class Box {
+    int width, height;
+
+    Box() { width = 10; height = 10; }
+    Box(int w) { width = w; height = 10; }
+    Box(int w, int h) { width = w; height = h; }
+
+    void show() { System.out.println("W: " + width + ", H: " + height); }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        new Box().show(); new Box(5).show(); new Box(5, 8).show();
+    }
+}
