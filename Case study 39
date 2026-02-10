@@ -1,0 +1,4 @@
+interface Payment { void process(double a); }
+class CC implements Payment { public void process(double a) { System.out.println("CC: " + a); } }
+class PP implements Payment { public void process(double a) { System.out.println("PP: " + a); } }
+public class Main { public static void main(String[] args) { new CC().process(100); new PP().process(200); } }
