@@ -1,0 +1,18 @@
+class Employee {
+    String name;
+    Employee(String n) { name = n; }
+}
+
+class Manager extends Employee {
+    String dept;
+    Manager(String n, String d) { super(n); dept = d; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee e = new Employee("Alice");
+        Manager m = new Manager("Bob", "HR");
+        System.out.println("Employee: " + e.name);
+        System.out.println("Manager: " + m.name + ", Dept: " + m.dept);
+    }
+}
