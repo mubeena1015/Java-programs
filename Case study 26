@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        String str = args[0];
+        char ch = args[1].charAt(0);
+        int count = 0;
+        for (char c : str.toCharArray()) {
+            if (c == ch) count++;
+        }
+        System.out.println("Count: " + count);
+    }
+}
