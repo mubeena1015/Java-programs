@@ -1,0 +1,11 @@
+class Person { String name; }
+class Student extends Person { String course; }
+class GraduateStudent extends Student { String thesis; }
+
+public class Main {
+    public static void main(String[] args) {
+        GraduateStudent gs = new GraduateStudent();
+        gs.name = "Alice"; gs.course = "CS"; gs.thesis = "AI";
+        System.out.println(gs.name + " " + gs.course + " " + gs.thesis);
+    }
+}
