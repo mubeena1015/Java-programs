@@ -1,0 +1,15 @@
+class InvalidInputException extends Exception {
+    InvalidInputException(String msg) { super(msg); }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            int num = Integer.parseInt(args[0]);
+            if (num < 0) throw new InvalidInputException("Negative not allowed");
+            System.out.println("Valid: " + num);
+        } catch (InvalidInputException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
