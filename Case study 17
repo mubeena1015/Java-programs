@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        int min = Integer.MAX_VALUE, secondMin = Integer.MAX_VALUE;
+        for (String arg : args) {
+            int num = Integer.parseInt(arg);
+            if (num < min) {
+                secondMin = min;
+                min = num;
+            } else if (num < secondMin && num != min) {
+                secondMin = num;
+            }
+        }
+        System.out.println("Smallest: " + min + ", Second smallest: " + secondMin);
+    }
+}
