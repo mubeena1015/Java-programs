@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        int max = Integer.MIN_VALUE;
+        for (String arg : args) {
+            int score = Integer.parseInt(arg);
+            if (score > max) max = score;
+        }
+        System.out.println("Maximum score: " + max);
+    }
+}
