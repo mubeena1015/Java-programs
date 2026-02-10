@@ -1,0 +1,13 @@
+class Account {
+    private double balance;
+    public double getBalance() { return balance; }
+    public void setBalance(double b) { balance = b; }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Account acc = new Account();
+        acc.setBalance(1000);
+        System.out.println(acc.getBalance());
+    }
+}
